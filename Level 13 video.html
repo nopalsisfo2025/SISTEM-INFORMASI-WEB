@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Video di HTML</title>
+</head>
+<body>
+  <h1>Menampilkan Video</h1>
+
+  <!-- Letakkan file video kamu (mis. video.mp4) di folder media -->
+  <video controls width="480" poster="">
+    <source src="media/video.mp4" type="video/mp4">
+    <source src="media/video.webm" type="video/webm">
+    Browser kamu tidak mendukung tag video.
+  </video>
+
+  <p>Atribut berguna: controls, autoplay, loop, muted, width, height.</p>
+
+  <h2>Video dari YouTube (iframe)</h2>
+  <!-- Ganti ID_VIDEO dengan ID video YouTube pilihanmu -->
+  <iframe width="480" height="270"
+          src="https://www.youtube.com/embed/ID_VIDEO"
+          title="Video YouTube" allowfullscreen></iframe>
+</body>
+</html>
