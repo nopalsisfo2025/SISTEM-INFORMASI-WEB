@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form di HTML</title>
+</head>
+<body>
+  <h1>Formulir Pendaftaran</h1>
+
+  <form action="#" method="post">
+    <p>
+      <label for="nama">Nama:</label><br>
+      <input type="text" id="nama" name="nama" required>
+    </p>
+
+    <p>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required>
+    </p>
+
+    <p>
+      <label for="sandi">Kata sandi:</label><br>
+      <input type="password" id="sandi" name="sandi" minlength="6">
+    </p>
+
+    <p>Jenis kelamin:<br>
+      <label><input type="radio" name="gender" value="pria"> Pria</label>
+      <label><input type="radio" name="gender" value="wanita"> Wanita</label>
+    </p>
+
+    <p>Hobi:<br>
+      <label><input type="checkbox" name="hobi" value="baca"> Membaca</label>
+      <label><input type="checkbox" name="hobi" value="musik"> Musik</label>
+      <label><input type="checkbox" name="hobi" value="olahraga"> Olahraga</label>
+    </p>
+
+    <p>
+      <label for="kota">Kota:</label><br>
+      <select id="kota" name="kota">
+        <option value="makassar">Makassar</option>
+        <option value="jakarta">Jakarta</option>
+        <option value="surabaya">Surabaya</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="pesan">Pesan:</label><br>
+      <textarea id="pesan" name="pesan" rows="4" cols="40"></textarea>
+    </p>
+
+    <button type="submit">Kirim</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>
